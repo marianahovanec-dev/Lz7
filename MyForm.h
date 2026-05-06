@@ -236,8 +236,9 @@ namespace Lz7 {
 			// розробникToolStripMenuItem
 			// 
 			this->розробникToolStripMenuItem->Name = L"розробникToolStripMenuItem";
-			this->розробникToolStripMenuItem->Size = System::Drawing::Size(134, 22);
+			this->розробникToolStripMenuItem->Size = System::Drawing::Size(180, 22);
 			this->розробникToolStripMenuItem->Text = L"Розробник";
+			this->розробникToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::розробникToolStripMenuItem_Click);
 			// 
 			// contextMenuStrip1
 			// 
@@ -330,6 +331,9 @@ private: System::Void обчислитиToolStripMenuItem_Click(System::Object^ sender, S
 
 private: System::Void інформаціяToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 	MessageBox::Show("Програма автоматично заповнює матрицю випадковими числами, знаходить серед них мінімальне значення та виводить його на панель управління. Після цього алгоритм множить кожен елемент масиву на знайдений мінімум і виконує комбіноване сортування стовпців залежно від їхньої парності. Весь процес реалізовано на базі C++ Windows Forms, що забезпечує наочне відображення обробки даних у таблиці в реальному часі.");
+}
+private: System::Void розробникToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	MessageBox::Show("Хованець Мар'яна Миколаївна, 3 СОМ")
 }
 };
 }
